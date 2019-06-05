@@ -123,3 +123,9 @@ h1  {
 .madlib {
   display: none;
 }
+
+
+input {
+  width: 50%;
+  float: right;
+}
