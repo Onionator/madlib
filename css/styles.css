@@ -1,0 +1,125 @@
+body {
+background-image: url("../img/fish_toaster_grey.jpeg");
+background-size: 200px 200px;
+background-color: #272525;
+background-attachment: fixed;
+font-family: monospace;
+}
+h1  {
+  font-size: 25px;
+}
+/*this id is strictly used to change the color of the number of nav templates.*/
+#number_color {
+  color: #2fafaf;
+}
+/*.container puts the wepage in a container to enhance the look of the content.*/
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1120px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 110px;
+}
+/*contentbox puts content into a box to seperate content into different boxes.*/
+.contentbox {
+  background-color: #515151;
+  border-radius: 15px;
+  box-shadow: 5px 5px #272525;
+  color: black;
+  margin-bottom: 10px;
+  padding: 20px;
+  font-size: 20px;
+}
+/* .horizontal_nav is used to make a fixed horizontal navbar */
+.horizontal_nav {
+  text-align: center;
+}
+/* .horizontal_nav nav is used to make a fixed horizontal navbar */
+.horizontal_nav nav {
+  background-color: #272525;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: inline-flex;
+  overflow: hidden;
+  padding-bottom: 20px;
+  position: fixed;
+  top: 0px;
+  left: 0%;
+  right: 0%;
+}
+/*.horizontal_nav a changes how to buttons look*/
+.horizontal_nav a {
+  /*Text modifications in navbar*/
+  color: darksalmon;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 1px 1px black;
+  /*button/tab modifications in navbar*/
+  background-color: #515151;
+  border: 2px solid black;
+  border-radius: 5px;
+  border-style: outset;
+  display: block;
+  float: left;
+  height: 75px;
+  width: 25%;
+}
+/*.horizontal_nav a.active shows the user which webpage he is on.*/
+.horizontal_nav a.active {
+  background-color: #272525;
+  border-bottom-style: none;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  color: #2fafaf;
+}
+/*.horizontal nav a:hover changes what happens when the cursor is hovering over an anchor*/
+.horizontal_nav a:hover {
+  background-color: #272525;
+  border-bottom-style: none;
+  color: #2fafaf;
+}
+
+/*this media query changes the the page to optimize for oneplus 6t*/
+@media screen and (max-width: 980px) and (min-width: 960px) {
+  body {
+  background-size: 400px 400px;
+  }
+  h1 {
+    font-size: 80px;
+  }
+  .contentbox {
+    color: #2fafaf;
+    font-size: 50px;
+    text-shadow: 2px 2px black;
+  }
+  .container {
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 480px;
+  }
+  .horizontal_nav a {
+    border-radius: 15px;
+    font-size: 79px;
+    height: auto;
+    text-shadow: 4px 4px black;
+    font-weight: bold;
+    width: 100%;
+  }
+  .horizontal_nav nav {
+    display: block;
+    padding-bottom: 1px;
+    position: absolute;
+    top: 0px;
+  }
+}
+
+.btn {
+  margin: 20px;
+  font-size: 20px;
+}
+
+.madlib {
+  display: none;
+}
