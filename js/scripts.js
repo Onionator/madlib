@@ -10,7 +10,7 @@ $(document).ready(function() {
     $(".place1").text($("input#place1").val());
     $(".pastVerb").text($("input#pastVerb").val());
     $(".stateOfBeing").text($("input#stateOfBeing").val());
-    $(".name").text($("name").val());
+    $(".name").text($("#name").val());
     // this method reveals the madlib
     $(".madlib").show();
     // this event prevents the page from refreshing when the button is pushed
